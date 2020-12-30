@@ -3,6 +3,7 @@
 #include <stdio.h>
 using namespace std;
 int n;
+using std::cout;
 struct node
 {
     int ned;

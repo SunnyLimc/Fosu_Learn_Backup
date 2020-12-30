@@ -142,12 +142,15 @@
 //     }
 //     printf("%lf", s);
 // }
-
-#include <stdio.h>
+struct HH
+{
+    char teachar[5];
+} a;
 int main()
 {
-    int arr[2010];
-    printf("%d\n", arr[2]);
-    printf("%d\n", arr[4]);
-    printf("%d\n", arr[2000]);
+    char a[10];
+    char a[] = {a, a};
+    char *a;
+    char a[10] = {a, a};
+    char a[] = "guncu";
 }

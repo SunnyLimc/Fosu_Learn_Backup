@@ -15,8 +15,55 @@
 //         }
 //     printf("%d\n", n[1]);
 // }
+// int main()
+// {
+//     int a[10], i, j, tmp;
+//     for (i = 0; i < 10; i++)
+//     {
+//         a[i] = i;
+//     }
+//     for (i = 0; i < 10 - 1; i++)
+//         for (j = 0; j < 10 - i - 1; j++)
+//             if (a[j] < a[j + 1])
+//             {
+//                 tmp = a[j];
+//                 a[j] = a[j + 1];
+//                 a[j + 1] = tmp;
+//             }
+//     for (i = 0; i < 10; i++)
+//         printf("%d ", a[i]);
+// }
+// int main()
+// {
+//     int a[10], i, j, max;
+//     for (i = 0; i < 10; i++)
+//     {
+//         a[i] = i;
+//     }
+//     for (i = 0; i < 10; i++)
+//     {
+//         max = a[i];
+//         for (j = i; j < 10; j++)
+//             if (a[j] > max)
+//             {
+//                 max = a[j];
+//                 a[j] = a[i];
+//                 a[i] = max;
+//             }
+//     }
+//     for (i = 0; i < 10; i++)
+//         printf("%d ", a[i]);
+// }
+#include <stdio.h>
 int main()
 {
-    int a[4];
-    printf("%ld", sizeof(char[4]));
+    int i, n, sum = 0, tmp;
+    scanf("%d%d", &i, &n);
+    tmp = i;
+    while (n--)
+    {
+        sum += i;
+        i = i * 10 + tmp;
+    }
+    printf("%d", sum);
 }
