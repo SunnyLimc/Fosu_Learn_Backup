@@ -1,4 +1,3 @@
-
 public class model {
     private static int[] id, sz;
     private static boolean[] stat;
