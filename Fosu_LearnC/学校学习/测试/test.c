@@ -144,14 +144,9 @@
 // }
 #include <stdio.h>
 
-struct
-{
-    int hh;
-    double b;
-    char a;
-} ab;
 int main()
 {
-    int a = 0;
-    a + 1;
+    char name[20];
+    scanf("%s", name);
+    fscanf
 }
