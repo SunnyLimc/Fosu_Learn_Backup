@@ -142,11 +142,104 @@
 //     }
 //     printf("%lf", s);
 // }
+// #include <stdio.h>
+// void swap(int *a, int *b)
+// {
+//     int tmp;
+//     tmp = *a;
+//     *a = *b;
+//     *b = tmp;
+// }
+// int main()
+// {
+//     int a[10], n, min, max;
+//     scanf("%d", &n);
+//     for (int i = 0; i < n; i++)
+//         scanf("%d", &a[i]);
+//     min = max = 0;
+//     for (int i = 0; i < n; i++)
+//         if (a[i] < a[min])
+//             min = i;
+//     swap(&a[min], &a[0]);
+//     for (int i = 0; i < n; i++)
+//         if (a[i] > a[max])
+//             max = i;
+//     swap(&a[max], &a[n - 1]);
+//     for (int i = 0; i < n; i++)
+//         printf("%d ", a[i]);
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     char s1[100], s2[100];
+//     int i = 0, j = 0;
+//     scanf("%s", s1);
+//     scanf("%s", s2);
+//     while (s1[i])
+//         i++;
+//     while (s2[j])
+//     {
+//         printf("第%d次循环\n", j);
+//         printf("i:%d  j:%d  s1[%d]<--s2[%d]: %c\n\n", i, j, i, j, s2[j]);
+//         s1[i++] = s2[j++];
+//     }
+//     s1[i] = '\0';
+//     printf("\n%s\n", s1);
+// }
+// #include <stdio.h>
+// #include <math.h>
+// double absf(double num)
+// {
+//     if (num < 0)
+//         num = -num;
+//     return num;
+// }
+// int main()
+// {
+//     char name[10000][9];
+//     int guess[10000], sum = 0, n;
+//     double averNumMid;
+//     scanf("%d", &n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%s %d", name[i], &guess[i]);
+//         sum += guess[i];
+//     }
+//     averNumMid = (double)sum / n / 2;
+//     printf("%.lf ", averNumMid);
+//     double min = absf(guess[0] - averNumMid);
+//     int minI = 0;
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (absf(guess[i] - averNumMid) < min)
+//         {
+//             min = absf(guess[i] - averNumMid);
+//             minI = i;
+//         }
+//     }
+//     printf("%s", name[minI]);
+// }
 #include <stdio.h>
-
+// #define N 4
+// int main()
+// {
+//     int a[N];
+//     for (int i = 0; i < N; i++)
+//         scanf("%d", &a[i]);
+//     for (int i = 0; i < N - 1; i++)
+//         for (int j = 0; j < N - i - 1; j++)
+//             if (a[j] > a[j + 1])
+//             {
+//                 int tmp;
+//                 tmp = a[j];
+//                 a[j] = a[j + 1];
+//                 a[j + 1] = tmp;
+//             }
+//     for (int i = 0; i < N; i++)
+//         printf("%d", a[i]);
+// }
 int main()
 {
-    char name[20];
-    scanf("%s", name);
-    fscanf
+    int a = 6;
+    printf("%d", a += a -= a * a++);
 }

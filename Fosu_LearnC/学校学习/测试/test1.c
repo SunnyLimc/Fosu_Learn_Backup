@@ -110,40 +110,47 @@
 //         return 0;
 //     printf("%d", tol);
 // }
+// #include <stdio.h>
+// #include <stdlib.h>
+// struct Linknode
+// {
+//     int id;
+//     struct Linknode *next;
+// } * head;
+// int main()
+// {
+//     int n, sk;
+//     scanf("%d %d", &n, &sk);
+//     struct Linknode *p;
+//     head = p = (struct Linknode *)malloc(sizeof(struct Linknode));
+//     for (int i = 1; i <= n; i++)
+//     {
+//         p->id = i;
+//         if (i == n)
+//             p->next = head;
+//         else
+//             p->next = (struct Linknode *)malloc(sizeof(struct Linknode));
+//         p = p->next;
+//     }
+//     p = head;
+//     int cnt = 1;
+//     while (p->next != p)
+//     {
+//         p = p->next;
+//         cnt++;
+//         if (cnt == sk - 1)
+//         {
+//             p->next = p->next->next;
+//             p = p->next;
+//             cnt = 1;
+//         }
+//     }
+//     printf("%d", p->id);
+// }
 #include <stdio.h>
 #include <stdlib.h>
-struct Linknode
-{
-    int id;
-    struct Linknode *next;
-} * head;
 int main()
 {
-    int n, sk;
-    scanf("%d %d", &n, &sk);
-    struct Linknode *p;
-    head = p = (struct Linknode *)malloc(sizeof(struct Linknode));
-    for (int i = 1; i <= n; i++)
-    {
-        p->id = i;
-        if (i == n)
-            p->next = head;
-        else
-            p->next = (struct Linknode *)malloc(sizeof(struct Linknode));
-        p = p->next;
-    }
-    p = head;
-    int cnt = 1;
-    while (p->next != p)
-    {
-        p = p->next;
-        cnt++;
-        if (cnt == sk - 1)
-        {
-            p->next = p->next->next;
-            p = p->next;
-            cnt = 1;
-        }
-    }
-    printf("%d", p->id);
+    int a, b, c, max, mid, min;
+    scanf("%d %d %d", &a, &b, &c);
 }
