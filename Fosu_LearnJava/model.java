@@ -1,7 +1,7 @@
 public class model {
     private static int[] id, sz;
     private static boolean[] stat;
-    private static int N = 15000;
+    private static int N = 10;
 
     public void init() {
         // init array
